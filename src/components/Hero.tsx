@@ -3,12 +3,12 @@ import "./Hero.css";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="absolute text-white flex w-full justify-between font-anton md:px-20 md:pt-5">
-      <h1 className={`appear text-3xl`} data-appear="left">
-        My<span className={`text-[#e70024]  `}>Logo </span>
+    <div className="absolute text-white flex w-full justify-between font-anton md:px-20 md:pt-5 overflow-hidden">
+      <h1 className={`appear text-2xl`} data-appear="left">
+        Ske<span className={`text-[#e70024]  `}>ptic </span>
       </h1>
-      <div className="text-xl flex gap-5">
-        <span className={` appear `} data-appear="right">
+      <div className="text-lg flex gap-5">
+        <span className={` inline-block appear `} data-appear="right">
           Upcoming Gigs
         </span>
         <span className={` appear `} data-appear="right">
@@ -35,6 +35,22 @@ const page2: React.FC<page2Props> = ({}) => {
         />
       </div>
       <Navbar />
+
+      <div className="absolute flex gap-7 top-1/2 -rotate-90 -translate-y-1/2  ">
+        <h1
+          className="text-zinc-200 text-[12px] font-anton w-24 appear"
+          data-appear="left"
+        >
+          Nigerian rapper, music and record producer
+        </h1>
+        <h1
+          className="text-zinc-200 text-[12px] font-anton w-24  appear "
+          data-appear="left"
+        >
+          Also known as founder of the nigerian rap movement
+        </h1>
+      </div>
+      {/* initial text  */}
       <div className="w-full h-screen flex justify-center items-center absolute overflow-hidden ">
         <span
           className={`test text-zinc-200   font-anton uppercase tracking-wider font-semibold initialText`}
@@ -42,6 +58,7 @@ const page2: React.FC<page2Props> = ({}) => {
           Let the party begin!
         </span>
       </div>
+      {/* initial text  */}
     </div>
   );
 };

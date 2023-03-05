@@ -25,18 +25,38 @@
   animation: initialText 2s normal ease-out, hideText 500ms normal ease-out 2s;
 }
 
-.appear {
-  animation: appearLeft 5s normal easy-out;
-  /* transform: translate(100px); */
+.appear[data-appear="left"] {
+  animation: appear-left 3s normal ease-out;
 }
 
-@keyframes appearLeft {
-  from {
-    transform: translate(100px);
-  }
+.appear[data-appear="right"] {
+  animation: appear-right 3s normal ease-out;
+}
 
+@keyframes appear {
+  from {
+    transform: translate(-100vw);
+  }
   to {
-    transform: translate(0px);
+    transform: translate(0);
+  }
+}
+
+@keyframes appear-right {
+  from {
+    transform: translate(100vw);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes appear-left {
+  from {
+    transform: translate(-100vw);
+  }
+  to {
+    transform: translate(0);
   }
 }
 

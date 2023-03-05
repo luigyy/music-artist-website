@@ -1,0 +1,92 @@
+.saturate {
+  animation: saturate 7s infinite ease-out 2500ms;
+}
+
+.blur-animation {
+  animation: initial-blur 2500ms normal ease-out;
+}
+
+.initialText {
+  font-size: 60px;
+  line-height: 1;
+  animation: initialText 2s normal ease-out, hideText 300ms normal ease-out 2s;
+  position: relative;
+  visibility: hidden;
+}
+
+.initialText::before {
+  content: "Let the party begin!";
+  margin-left: 3px;
+  margin-top: 3px;
+  position: absolute;
+  color: #e70024;
+  width: 102%;
+  height: 100%;
+  animation: initialText 2s normal ease-out, hideText 500ms normal ease-out 2s;
+}
+
+.appear {
+  animation: appearLeft 5s normal easy-out;
+  /* transform: translate(100px); */
+}
+
+@keyframes appearLeft {
+  from {
+    transform: translate(100px);
+  }
+
+  to {
+    transform: translate(0px);
+  }
+}
+
+@keyframes hideText {
+  from {
+    transform: translate(0px, 0px);
+    visibility: visible;
+  }
+  to {
+    transform: translate(-100vw, 0);
+  }
+}
+
+@keyframes initialText {
+  from {
+    font-size: 10px;
+    visibility: visible;
+    filter: brightness(20%);
+  }
+
+  to {
+    font-size: 60px;
+  }
+}
+
+@keyframes initial-blur {
+  from {
+    filter: brightness(0%) blur(4px);
+  }
+
+  to {
+    filter: brightness(10%) blur(0px);
+  }
+}
+
+@keyframes saturate {
+  0% {
+    filter: saturate(100%);
+  }
+  25% {
+    filter: saturate(300%);
+  }
+  50% {
+    filter: saturate(100%);
+  }
+  75% {
+    filter: saturate(300%);
+  }
+
+  100% {
+    filter: saturate(100%);
+  }
+}

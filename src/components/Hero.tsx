@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="absolute z-50 text-white flex w-full justify-between font-anton md:px-20 md:pt-5 overflow-hidden">
       <button
-        className={`appear pb-1 text-2xl transition-all underline-animation relative`}
+        className={`appear pb-1 text-3xl transition-all underline-animation relative`}
         data-appear="left"
       >
         Ske<span className={`text-[#e70024]  `}>ptic </span>
@@ -57,11 +57,43 @@ const page2: React.FC<page2Props> = ({}) => {
         </h1>
       </div>
 
-      {/* <div className="absolute font-anton">
-        <h1 className="text-zinc-200">Latest hits </h1>
-        <div></div>
-        <div></div>
-      </div> */}
+      <div className="absolute top-2/3 -translate-y-1/2 md:right-20 right-0 font-anton z-50">
+        <h1
+          className="text-zinc-200 text-3xl italic text-center pb-5 appear"
+          data-appear="right"
+        >
+          Latest{" "}
+        </h1>
+        <div className="flex gap-10 appear" data-appear="right">
+          <div className="w-36 aspect-[0.8] relative object-cover ">
+            <img
+              src="latest-1.jpg"
+              className="absolute w-full h-full rounded hover:scale-105 transition-all duration-200 saturate shadow-2xl"
+              alt=""
+            />
+            <h1 className="absolute  text-red-600 bottom-5 pl-1 ">
+              Miami, FL, US
+            </h1>
+            <h1 className=" absolute text-sm text-zinc-300 bottom-0 pl-1">
+              10/10/2022
+            </h1>
+          </div>
+          <div className="w-36 aspect-[0.8] relative object-cover">
+            <img
+              src="latest-2.jpg"
+              className="absolute w-full h-full hover:scale-105 transition-all duration-200 rounded saturate shadow-2xl"
+              alt=""
+            />
+
+            <h1 className="absolute  text-red-600  bottom-5 pl-1 ">
+              Utrecht, Netherlands
+            </h1>
+            <h1 className="absolute text-sm text-zinc-300 bottom-0 pl-1">
+              06/04/2022
+            </h1>
+          </div>
+        </div>
+      </div>
       {/* initial text  */}
       <div className="w-full h-screen flex justify-center items-center absolute overflow-hidden ">
         <span

@@ -33,6 +33,22 @@
   animation: appear-right 3s normal ease-out;
 }
 
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  background: red;
+  height: 3px;
+  bottom: 0px;
+  transition: all 1s ease-out;
+}
+.underline-animation:hover::before {
+  width: 100%;
+}
 @keyframes appear {
   from {
     transform: translate(-100vw);

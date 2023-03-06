@@ -29,7 +29,7 @@ function App() {
       <div
         style={followCursor}
         className={`${
-          isHovering ? "inline" : "hidden"
+          isHovering ? "" : "w-0 h-0"
         } absolute transition-all ease-out  duration-[3s] flex justify-center items-center text-2xl font-anton text-zinc-200 tracking-widest border-4 border-zinc-200 z-50 w-20 h-20 rounded-full`}
       >
         <p>{isHovering}</p>{" "}

@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         anton: ["Anton", "sans-serif"],
+        bebas: ["Bebas Neue", "cursive"],
       },
     },
   },

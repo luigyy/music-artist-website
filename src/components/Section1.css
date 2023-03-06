@@ -1,0 +1,18 @@
+.move-text {
+  position: absolute;
+  left: -100%;
+  animation: moveText 10s infinite ease-in-out;
+}
+
+#second {
+  animation-delay: 5s;
+}
+
+@keyframes moveText {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(200vw, 0px);
+  }
+}

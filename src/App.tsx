@@ -37,7 +37,7 @@ function App() {
       {/* cursor follower */}
 
       <Hero />
-      <Section1 />
+      <Section1 width={pos.x} />
     </div>
   );
 }

@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         anton: ["Anton", "sans-serif"],
         bebas: ["Bebas Neue", "cursive"],
+        bowlby: ["Bowlby One SC", "cursive"],
       },
     },
   },

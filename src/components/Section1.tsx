@@ -2,9 +2,11 @@ import React from "react";
 import "./Section1.css";
 import { useCursorContext } from "../contexts/CursorContext";
 
-interface Section1Props {}
+interface Section1Props {
+  width: number;
+}
 
-const Section1: React.FC<Section1Props> = ({}) => {
+const Section1: React.FC<Section1Props> = ({ width }) => {
   const { setIsHovering } = useCursorContext();
   return (
     <div className=" h-screen bg-[#002836] relative overflow-hidden ">
@@ -45,7 +47,19 @@ const Section1: React.FC<Section1Props> = ({}) => {
           </h1>
         </div>
       </div>
-      <div></div>
+      <div className="mt-[96px] flex justify-center items-center h-[calc(50vh-48px)] bg-black absolute w-full">
+        <h1 className="text-white text-center  font-bowlby text-8xl z-50  ">
+          Limited editon tickets
+        </h1>
+      </div>
+      <div
+        style={{ width }}
+        className="mt-[96px]  h-[calc(50vh-48px)] bg-[#ff001e] absolute w-full"
+      >
+        <h1 className="text-black text-8xl text-center mt-20 font-bowlby w-[100vw]">
+          Limited edition tickets
+        </h1>
+      </div>
     </div>
   );
 };

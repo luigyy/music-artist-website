@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState } from "react";
+import React, { useContext, useEffect, createContext, useState } from "react";
 
 interface CursorContextI {
   isHovering: string;
@@ -9,7 +9,10 @@ const StateContext = createContext<CursorContextI>({});
 
 //@ts-ignore
 export const CursorContextProvider = ({ children }) => {
-  const [isHovering, setIsHovering] = useState("Buy");
+  const [isHovering, setIsHovering] = useState("");
+  useEffect(() => {
+    console.log(isHovering);
+  }, [isHovering]);
 
   return (
     <StateContext.Provider value={{ isHovering, setIsHovering }}>

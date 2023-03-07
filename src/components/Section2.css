@@ -1,0 +1,69 @@
+.saturate {
+  animation: saturate 7s infinite ease-out 2500ms;
+}
+.appear[data-appear="left"] {
+  animation: appear-left 1s normal ease-out;
+}
+
+.appear[data-appear="right"] {
+  animation: appear-right 1s normal ease-out;
+}
+
+.appear-container:nth-child(1) {
+  animation-delay: 2s !important;
+}
+
+/* im sure theres a better way to do this  */
+#delay-0 {
+  animation-delay: 400ms !important;
+}
+#delay-1 {
+  animation-delay: 300ms !important;
+}
+#delay-2 {
+  animation-delay: 200ms !important;
+}
+#delay-4 {
+  animation-delay: 200ms !important;
+}
+#delay-5 {
+  animation-delay: 400ms !important;
+}
+/* im sure theres a better way to do this  */
+
+@keyframes appear-right {
+  from {
+    transform: translate(100vw);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes appear-left {
+  from {
+    transform: translate(-100vw);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes saturate {
+  0% {
+    filter: saturate(100%);
+  }
+  25% {
+    filter: saturate(250%);
+  }
+  50% {
+    filter: saturate(100%);
+  }
+  75% {
+    filter: saturate(250%);
+  }
+
+  100% {
+    filter: saturate(100%);
+  }
+}

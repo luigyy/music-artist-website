@@ -17,10 +17,10 @@ const Section2: React.FC<Section2Props> = ({}) => {
         alt=""
       />
       <div className="text-white  left-1/2 -translate-x-1/2 top-1/2 absolute text-9xl font-bowlby">
-        <span className="tracking-[02rem] overflow-hidden appear-container">
+        <span className="tracking-[02rem] overflow-hidden appear-animation-container">
           <span
             className={`rotate-[-15deg]  inline-block relative h-[200px]  ${
-              inView ? "appear" : ""
+              inView ? "appear-animation" : ""
             }`}
             data-appear="left"
             id="delay-0"
@@ -28,14 +28,18 @@ const Section2: React.FC<Section2Props> = ({}) => {
             S
           </span>
           <span
-            className={`rotate-[-10deg] inline-block ${inView ? "appear" : ""}`}
+            className={`rotate-[-10deg] inline-block ${
+              inView ? "appear-animation" : ""
+            }`}
             data-appear="left"
             id="delay-1"
           >
             K
           </span>
           <span
-            className={`rotate-[-deg] inline-block ${inView ? "appear" : ""}`}
+            className={`rotate-[-deg] inline-block ${
+              inView ? "appear-animation" : ""
+            }`}
             data-appear="left"
             id="delay-3"
           >
@@ -44,7 +48,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
           <span className="text-[#ff001e]">
             <span
               className={`inline-block rotate-[10deg] ${
-                inView ? "appear" : ""
+                inView ? "appear-animation" : ""
               }`}
               data-appear="right"
               id="delay-4"
@@ -53,7 +57,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
             </span>
             <span
               className={`inline-block rotate-[15deg] ${
-                inView ? "appear" : ""
+                inView ? "appear-animation" : ""
               }`}
               data-appear="right"
               id="delay-5"
@@ -66,7 +70,9 @@ const Section2: React.FC<Section2Props> = ({}) => {
 
       <div className="ml-4 flex justify-between">
         <div
-          className={`max-w-[200px] mt-20 ml-4 ${inView ? "appear" : ""} `}
+          className={`max-w-[200px] mt-20 ml-4 ${
+            inView ? "appear-animation" : ""
+          } `}
           data-appear="left"
         >
           <h1 className="text-3xl text-[#ff001e] ">Lorem ipsum</h1>
@@ -79,7 +85,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
         </div>
         <div
           className={`mt-72 text-white mr-4 max-w-[200px] font-anton  ${
-            inView ? "appear" : ""
+            inView ? "appear-animation" : ""
           }`}
           data-appear="right"
         >

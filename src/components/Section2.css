@@ -1,11 +1,11 @@
 .saturate {
   animation: saturate 7s infinite ease-out 2500ms;
 }
-.appear[data-appear="left"] {
+.appear-animation[data-appear="left"] {
   animation: appear-left 1s normal ease-out;
 }
 
-.appear[data-appear="right"] {
+.appear-animation[data-appear="right"] {
   animation: appear-right 1s normal ease-out;
 }
 

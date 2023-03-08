@@ -5,6 +5,8 @@ import Section2 from "./components/Section2";
 //
 import { useEffect, useState } from "react";
 import { useCursorContext } from "./contexts/CursorContext";
+import Merch from "./components/Merch";
+import Footer from "./components/Footer";
 
 function App() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -31,8 +33,8 @@ function App() {
       <div
         style={followCursor}
         className={`${
-          isHovering ? "w-28 h-28" : "w-0 h-0 opacity-0"
-        } absolute transition-all ease-out  duration-[3s]  flex justify-center items-center text-2xl font-anton text-zinc-200 tracking-widest border-4 border-zinc-200 z-50  rounded-full`}
+          isHovering ? "w-24 h-24" : "w-0 h-0 opacity-0"
+        } absolute transition-all ease-out duration-[3s] flex justify-center items-center text-2xl font-anton text-zinc-200 tracking-widest border-4 border-zinc-200 z-50 rounded-full`}
       >
         <p>{isHovering}</p>{" "}
       </div>
@@ -41,6 +43,8 @@ function App() {
       <Hero />
       <Section1 width={pos.x} />
       <Section2 />
+      <Merch />
+      <Footer />
     </div>
   );
 }

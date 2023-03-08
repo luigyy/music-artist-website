@@ -25,6 +25,10 @@
   animation: initialText 2s normal ease-out, hideText 500ms normal ease-out 2s;
 }
 
+.appear {
+  animation-duration: 4000ms !important;
+}
+
 .appear[data-appear="left"] {
   animation: appear-left 3s normal ease-out;
 }

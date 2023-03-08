@@ -3,16 +3,16 @@ import "./Hero.css";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="absolute z-50 text-white flex w-full justify-between font-anton md:px-20 md:pt-5 overflow-hidden">
+    <div className="absolute z-50 flex w-full justify-between overflow-hidden p-5 font-anton text-white md:px-20 md:pt-5">
       <button
-        className={`appear pb-1 text-3xl transition-all underline-animation relative`}
+        className={`appear underline-animation relative pb-1 text-3xl transition-all 2xl:text-5xl`}
         data-appear="left"
       >
-        Ske<span className={`text-[#e70024]  `}>ptic </span>
+        Ske<span className={`text-[#e70024]`}>ptic </span>
       </button>
-      <div className="text-lg flex gap-5">
+      <div className="flex gap-5 text-lg 2xl:text-xl">
         <button
-          className={`underline-animation inline-block appear `}
+          className={`underline-animation appear inline-block `}
           data-appear="right"
         >
           Upcoming Gigs
@@ -32,71 +32,71 @@ interface page2Props {}
 
 const page2: React.FC<page2Props> = ({}) => {
   return (
-    <div className="h-screen relative overflow-hidden">
+    <div className="relative h-screen overflow-hidden">
       <div className={`blur-animation`}>
         <img
           src="hero-bg.jpg"
-          className={`object-cover absolute h-screen w-full saturate`}
+          className={`saturate absolute h-screen w-full object-cover`}
           alt=""
         />
       </div>
       <Navbar />
-      <div className="absolute flex gap-7 top-1/2 z-50 -rotate-90 -translate-y-1/2  ">
+      <div className="absolute top-1/2 z-50 flex -translate-y-1/2 -rotate-90 gap-7">
         <h1
-          className="text-zinc-200 underline-animation  text-[12px] font-anton w-24 appear"
+          className="underline-animation appear  w-24 font-anton text-[12px] text-zinc-200 2xl:text-lg"
           data-appear="left"
         >
           Nigerian rapper, music and record producer
         </h1>
         <h1
-          className="text-zinc-200 underline-animation pb-2 text-[12px] font-anton w-24  appear "
+          className="underline-animation appear w-24 pb-2 font-anton text-[12px] text-zinc-200 2xl:text-lg "
           data-appear="left"
         >
           Also known as founder of the nigerian rap movement
         </h1>
       </div>
 
-      <div className="absolute top-2/3 -translate-y-1/2 md:right-20  right-0 font-anton z-50 ">
+      <div className="absolute top-2/3 right-0 z-50  -translate-y-1/2 pr-3 font-anton md:right-20 md:pr-0 ">
         <h1
-          className="text-zinc-200 appear text-3xl italic text-center pb-5 "
+          className="appear pb-5 text-center text-3xl italic text-zinc-200 2xl:text-4xl"
           data-appear="right"
         >
           Latest
         </h1>
-        <div className="flex gap-10 appear" data-appear="right">
-          <div className=" w-36 aspect-[0.8] relative object-cover">
+        <div className="appear flex gap-10" data-appear="right">
+          <div className="relative aspect-[0.8] w-24 object-cover md:w-36 2xl:w-52">
             <img
               src="latest-1.jpg"
-              className="absolute  w-full h-full rounded hover:scale-105 transition-all duration-200 saturate shadow-2xl"
+              className="saturate  absolute h-full w-full rounded shadow-2xl transition-all duration-200 hover:scale-105"
               alt=""
             />
-            <h1 className="absolute  text-red-600 bottom-5 pl-1 ">
+            <h1 className="absolute  bottom-5 pl-1 text-red-600 ">
               Miami, FL, US
             </h1>
-            <h1 className=" absolute text-sm text-zinc-300 bottom-0 pl-1">
+            <h1 className=" absolute bottom-0 pl-1 text-sm text-zinc-300">
               10/10/2022
             </h1>
           </div>
-          <div className="w-36 aspect-[0.8]  relative object-cover">
+          <div className="relative aspect-[0.8] w-24  object-cover md:w-36 2xl:w-52">
             <img
               src="latest-2.jpg"
-              className="absolute w-full h-full hover:scale-105 transition-all duration-200 rounded saturate shadow-2xl"
+              className="saturate absolute h-full w-full rounded shadow-2xl transition-all duration-200 hover:scale-105"
               alt=""
             />
 
-            <h1 className="absolute  text-red-600  bottom-5 pl-1 ">
+            <h1 className="absolute  bottom-5  pl-1 text-red-600 ">
               Utrecht, Netherlands
             </h1>
-            <h1 className="absolute text-sm text-zinc-300 bottom-0 pl-1">
+            <h1 className="absolute bottom-0 pl-1 text-sm text-zinc-300">
               06/04/2022
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="w-full h-screen flex justify-center items-center absolute overflow-hidden ">
+      <div className="absolute flex h-screen w-full items-center justify-center overflow-hidden ">
         <span
-          className={`test text-zinc-200   font-anton uppercase tracking-wider font-semibold initialText`}
+          className={`test initialText  font-anton font-semibold uppercase tracking-wider text-zinc-200 `}
         >
           Let the party begin!
         </span>

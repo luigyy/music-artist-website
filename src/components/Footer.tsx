@@ -4,12 +4,12 @@ interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = ({}) => {
   return (
-    <div className="bg-black h-[80vh] font-anton pt-32 pb-10">
-      <h1 className="text-7xl border-b-4 ml-20 max-w-[1000px] border-b-[#f0011e] text-[#ff001e] font-bowlby">
+    <div className="h-[80vh] bg-black pt-32 pb-10 font-anton">
+      <h1 className="ml-20 max-w-[1000px] border-b-4 border-b-[#f0011e] font-bowlby text-7xl text-[#ff001e] 2xl:max-w-[1300px] 2xl:text-8xl">
         Subscribe to our mail
       </h1>
 
-      <p className="text-3xl text-white max-w-[600px] mt-10 ml-20">
+      <p className="2xl:text-text-5xl mt-10 ml-20 max-w-[600px] text-3xl text-white 2xl:max-w-[850px]">
         To get updates, advance information, merch drops and more, directly into
         you mailbox
       </p>

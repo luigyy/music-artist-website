@@ -9,17 +9,17 @@ const Section2: React.FC<Section2Props> = ({}) => {
   return (
     <div
       ref={ref}
-      className="overflow-hidden h-screen bg-black font-anton relative"
+      className="relative h-screen overflow-hidden bg-black font-anton"
     >
       <img
         src="second-section-img.jpg"
-        className="object-cover w-96 absolute left-1/2 -translate-x-1/2 pt-12 rounded-full saturate"
+        className="saturate absolute left-1/2 w-96 -translate-x-1/2 rounded-full object-cover pt-12"
         alt=""
       />
-      <div className="text-white  left-1/2 -translate-x-1/2 top-1/2 absolute text-9xl font-bowlby">
-        <span className="tracking-[02rem] overflow-hidden appear-animation-container">
+      <div className="absolute  left-1/2 top-1/2 -translate-x-1/2 font-bowlby text-9xl text-white 2xl:text-[150px]">
+        <span className="appear-animation-container overflow-hidden tracking-[02rem]">
           <span
-            className={`rotate-[-15deg]  inline-block relative h-[200px]  ${
+            className={`relative  inline-block h-[200px] rotate-[-15deg]  ${
               inView ? "appear-animation" : ""
             }`}
             data-appear="left"
@@ -28,7 +28,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
             S
           </span>
           <span
-            className={`rotate-[-10deg] inline-block ${
+            className={`inline-block rotate-[-10deg] ${
               inView ? "appear-animation" : ""
             }`}
             data-appear="left"
@@ -37,7 +37,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
             K
           </span>
           <span
-            className={`rotate-[-deg] inline-block ${
+            className={`inline-block rotate-[-deg] ${
               inView ? "appear-animation" : ""
             }`}
             data-appear="left"
@@ -70,13 +70,13 @@ const Section2: React.FC<Section2Props> = ({}) => {
 
       <div className="ml-4 flex justify-between">
         <div
-          className={`max-w-[200px] mt-20 ml-4 ${
+          className={`mt-20 ml-4 max-w-[200px] 2xl:max-w-[300px] ${
             inView ? "appear-animation" : ""
           } `}
           data-appear="left"
         >
-          <h1 className="text-3xl text-[#ff001e] ">Lorem ipsum</h1>
-          <p className="text-white pt-5">
+          <h1 className="text-3xl text-[#ff001e] 2xl:text-5xl ">Lorem ipsum</h1>
+          <p className="pt-5 text-white 2xl:text-2xl">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
             debitis recusandae quibusdam{" "}
             <span className="text-[#ff001e]"> sint quos </span> consequuntur
@@ -84,13 +84,15 @@ const Section2: React.FC<Section2Props> = ({}) => {
           </p>
         </div>
         <div
-          className={`mt-72 text-white mr-4 max-w-[200px] font-anton  ${
+          className={`mt-72 mr-4 max-w-[200px] font-anton text-white 2xl:max-w-[300px]  ${
             inView ? "appear-animation" : ""
           }`}
           data-appear="right"
         >
-          <h1 className="text-3xl text-[#ff001e]">Lorem, ipsum.</h1>
-          <p className="pt-5">
+          <h1 className="text-3xl text-[#ff001e] 2xl:text-5xl">
+            Lorem, ipsum.
+          </h1>
+          <p className="pt-5 2xl:text-2xl">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae, qui accusantium delectus explicabo asperiores ducimus
             quaerat nobis est quibusdam maxime dicta earum repellendus sapiente

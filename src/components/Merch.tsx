@@ -9,8 +9,8 @@ const MerchCard: React.FC<MerchCardProps> = ({ img }) => {
   const { setIsHovering } = useCursorContext();
   return (
     <div
-      className="relative [&>*:nth-child(2)]:hover:rotate-[-5deg] [&>*:nth-child(2)]:hover:text-white [&>*:nth-child(2)]:text-[#ff001e]
-      w-[240px] hover:scale-110 [&>*:nth-child(2)]:hover:scale-105 hover:rotate-[5deg] aspect-[9/14] hover:bg-[#ff001e] transition-all duration-1000 bg-white rounded-2xl mx-auto"
+      className="relative mx-auto aspect-[9/14] w-[240px] rounded-2xl bg-white
+      transition-all duration-1000 hover:rotate-[5deg] hover:scale-110 hover:bg-[#ff001e] 2xl:w-[350px]  [&>*:nth-child(2)]:text-[#ff001e] [&>*:nth-child(2)]:hover:rotate-[-5deg] [&>*:nth-child(2)]:hover:scale-105 [&>*:nth-child(2)]:hover:text-white"
       onMouseEnter={() => {
         setIsHovering("More");
       }}
@@ -18,10 +18,10 @@ const MerchCard: React.FC<MerchCardProps> = ({ img }) => {
         setIsHovering("");
       }}
     >
-      <div className="w-full h-full hover:rotate-[-8deg] hover:scale-110  transition-all duration-1000 absolute rounded-2xl  ">
+      <div className="absolute h-full w-full rounded-2xl  transition-all duration-1000 hover:rotate-[-8deg] hover:scale-110  ">
         <img src={img} alt="" className="" />
       </div>
-      <div className="absolute left-2 bottom-0 w-full transition-all font-anton duration-1000 ">
+      <div className="absolute left-2 bottom-0 w-full font-anton transition-all duration-1000 ">
         <h1 className="text-4xl tracking-tighter">Skeptic shirt</h1>
         <h1 className="">19.90$</h1>
       </div>
@@ -34,7 +34,7 @@ interface MerchProps {}
 const Merch: React.FC<MerchProps> = ({}) => {
   return (
     <div className="min-h-[150vh] bg-black pb-10">
-      <h1 className="text-[#ff001e] text-8xl text-center pt-52 font-bowlby tracking-tighter  ">
+      <h1 className="text-center font-bowlby text-8xl tracking-tighter text-[#ff001e] md:pt-52 2xl:pt-20  ">
         Merch
       </h1>
       <div className=" grid grid-cols-3 gap-y-10 pt-28">

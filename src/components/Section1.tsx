@@ -17,25 +17,25 @@ const Section1: React.FC<Section1Props> = ({ width }) => {
       >
         <div className=" flex w-1/2 bg-black pt-2 font-bebas font-bold text-zinc-200 ">
           <div className="mx-auto flex  lg:w-full">
-            <div className="flex w-1/2 flex-col justify-center  pl-2 text-8xl  2xl:text-9xl  ">
+            <div className="flex w-1/2 flex-col justify-center pl-2 text-4xl md:text-8xl 2xl:text-9xl">
               <h1>Miami, FL</h1>
-              <h1 className="text-6xl 2xl:text-7xl">
+              <h1 className="md:text-6xl 2xl:text-7xl">
                 biggest event of the year
               </h1>
-              <h1 className="text-4xl text-[#ff001e]/80 2xl:text-5xl">
+              <h1 className="text-2xl text-[#ff001e]/80 md:text-4xl 2xl:text-5xl">
                 10/10/2022
               </h1>
             </div>
-            <div className="flex w-1/2 -rotate-90 items-center justify-center text-center text-9xl 2xl:text-[180px] ">
+            <div className="flex w-1/2  -rotate-90 items-center justify-center text-center text-2xl tracking-widest md:text-9xl md:tracking-normal 2xl:text-[180px] ">
               <h1>Get it now!</h1>
             </div>
           </div>
         </div>
         <div className="flex  w-1/2 items-center justify-center bg-[#ff001e] font-bebas text-black">
-          <p className="2xl: pt-12 text-[300px] font-bold transition-all 2xl:text-[400px]">
+          <p className="text-8xl font-bold transition-all md:text-[300px]  2xl:text-[400px]">
             Skptc
           </p>
-          <p className="text-sm">Inc</p>
+          <p className="pl-1 text-sm">Inc</p>
         </div>
       </div>
       <div
@@ -56,7 +56,7 @@ const Section1: React.FC<Section1Props> = ({ width }) => {
         </div>
       </div>
       <div className="  absolute mt-[96px] flex min-h-[calc(50vh-40px)] w-full items-center justify-center bg-black pb-10">
-        <h1 className="z-50 text-center  font-bowlby text-8xl text-white 2xl:text-9xl  ">
+        <h1 className="z-50  text-center font-bowlby text-4xl text-white md:text-8xl 2xl:text-9xl  ">
           Limited editon tickets
         </h1>
       </div>
@@ -64,7 +64,7 @@ const Section1: React.FC<Section1Props> = ({ width }) => {
         style={{ width }}
         className="absolute   mt-[96px] min-h-[calc(50vh-48px)] w-full bg-[#ff001e] pb-10"
       >
-        <h1 className="w-[100vw] text-center font-bowlby text-8xl text-black md:mt-20 2xl:text-9xl">
+        <h1 className="mt-32 w-[100vw] text-center font-bowlby text-4xl text-black md:mt-20 md:text-8xl 2xl:text-9xl">
           Limited edition tickets
         </h1>
       </div>

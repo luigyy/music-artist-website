@@ -13,11 +13,11 @@ const Section2: React.FC<Section2Props> = ({}) => {
     >
       <img
         src="second-section-img.jpg"
-        className="saturate absolute left-1/2 w-96 -translate-x-1/2 rounded-full object-cover pt-12"
+        className="saturate absolute left-1/2 w-72 -translate-x-1/2 rounded-full object-cover pt-12 md:w-96"
         alt=""
       />
       <div className="absolute  left-1/2 top-1/2 -translate-x-1/2 font-bowlby text-9xl text-white 2xl:text-[150px]">
-        <span className="appear-animation-container overflow-hidden tracking-[02rem]">
+        <span className="appear-animation-container hidden overflow-hidden tracking-[02rem] md:inline">
           <span
             className={`relative  inline-block h-[200px] rotate-[-15deg]  ${
               inView ? "appear-animation" : ""
@@ -70,7 +70,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
 
       <div className="ml-4 flex justify-between">
         <div
-          className={`mt-20 ml-4 max-w-[200px] 2xl:max-w-[300px] ${
+          className={`z-10 mt-20 ml-4 max-w-[200px] 2xl:max-w-[300px] ${
             inView ? "appear-animation" : ""
           } `}
           data-appear="left"
@@ -84,7 +84,7 @@ const Section2: React.FC<Section2Props> = ({}) => {
           </p>
         </div>
         <div
-          className={`mt-72 mr-4 max-w-[200px] font-anton text-white 2xl:max-w-[300px]  ${
+          className={`z-10 mt-72 mr-4 max-w-[200px] font-anton text-white 2xl:max-w-[300px]  ${
             inView ? "appear-animation" : ""
           }`}
           data-appear="right"
